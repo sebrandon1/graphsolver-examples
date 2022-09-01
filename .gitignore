@@ -1,0 +1,10 @@
+pkg/lib/vendor/
+pkg/export/vendor/
+examples/basic/vendor/
+vendor/
+.vscode/
+pkg/lib/.vscode/
+pkg/export/.vscode/
+examples/basic/.vscode/
+simplegraphsolver
+examples/basic/basic
