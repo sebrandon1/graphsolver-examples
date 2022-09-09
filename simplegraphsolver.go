@@ -2,8 +2,8 @@ package main
 
 import (
 	"github.com/openshift/ptp-operator/test/utils/client"
-	l2lib "github.com/test-network-function/l2discovery/l2lib"
-	"github.com/test-network-function/simplegraphsolver/pkg/lib"
+	lib "github.com/test-network-function/graphsolver-lib"
+	l2lib "github.com/test-network-function/l2discovery-lib"
 )
 
 // Runs Solver to find optimal configurations
@@ -21,7 +21,7 @@ func main() {
 	client.Client = client.New("")
 
 	// Initialize l2 library
-	l2lib.GlobalL2DiscoveryConfig.SetL2Client(client.Client, client.Client.Config, client.Client.PtpV1Interface)
+	l2lib.GlobalL2DiscoveryConfig.SetL2Client(client.Client, client.Client.Config)
 
 	// Collect L2 info
 	config, err := l2lib.GlobalL2DiscoveryConfig.GetL2DiscoveryConfig()
