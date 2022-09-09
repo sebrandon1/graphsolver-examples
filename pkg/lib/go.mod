@@ -4,7 +4,7 @@ go 1.18
 
 replace github.com/test-network-function/simplegraphsolver/pkg/export => ../export
 
-replace github.com/test-network-function/l2discovery/l2lib/pkg/export => ../../../l2discoverydavid/l2lib/pkg/export
+//replace github.com/test-network-function/l2discovery/l2lib/pkg/export => ../../../l2discoverydavid/l2lib/pkg/export
 
 require (
 	github.com/sirupsen/logrus v1.9.0

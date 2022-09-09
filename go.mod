@@ -2,9 +2,16 @@ module github.com/test-network-function/simplegraphsolver
 
 go 1.18
 
+replace (
+	github.com/openshift/machine-config-operator => github.com/openshift/machine-config-operator v0.0.1-0.20200913004441-7eba765c69c9
+	github.com/test-network-function/l2discovery/l2lib => ../l2discoverydavid/l2lib
+	github.com/test-network-function/l2discovery/l2lib/pkg/export => ../l2discoverydavid/l2lib/pkg/export
+	github.com/test-network-function/simplegraphsolver/pkg/export => ./pkg/export
+	github.com/test-network-function/simplegraphsolver/pkg/lib => ./pkg/lib
+)
+
 require (
-	github.com/davecgh/go-spew v1.1.1
-	github.com/openshift/ptp-operator v0.0.0-20220830213014-14d755519a10
+	github.com/openshift/ptp-operator v0.0.0-20220907171633-564febae1c75
 	github.com/test-network-function/l2discovery/l2lib v0.0.0-00010101000000-000000000000
 	github.com/test-network-function/simplegraphsolver/pkg/lib v0.0.0-00010101000000-000000000000
 )
@@ -14,6 +21,7 @@ require (
 	github.com/PuerkitoBio/urlesc v0.0.0-20170810143723-de5bf2ad4578 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cespare/xxhash/v2 v2.1.2 // indirect
+	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/emicklei/go-restful/v3 v3.8.0 // indirect
 	github.com/evanphx/json-patch v4.12.0+incompatible // indirect
 	github.com/fsnotify/fsnotify v1.5.1 // indirect
@@ -25,9 +33,9 @@ require (
 	github.com/golang/glog v1.0.0 // indirect
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
-	github.com/google/gnostic v0.6.9 // indirect
+	github.com/google/gnostic v0.5.7-v3refs // indirect
 	github.com/google/go-cmp v0.5.8 // indirect
-	github.com/google/gofuzz v1.2.0 // indirect
+	github.com/google/gofuzz v1.1.0 // indirect
 	github.com/google/uuid v1.1.2 // indirect
 	github.com/imdario/mergo v0.3.12 // indirect
 	github.com/josharian/intern v1.0.0 // indirect
@@ -38,8 +46,8 @@ require (
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.2 // indirect
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
-	github.com/openshift/api v0.0.0-20220831183848-09c070622e2c // indirect
-	github.com/openshift/client-go v0.0.0-20220831193253-4950ae70c8ea // indirect
+	github.com/openshift/api v0.0.0-20220824134416-0f86a223d4bc // indirect
+	github.com/openshift/client-go v0.0.0-20220525160904-9e1acff93e4a // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/prometheus/client_golang v1.12.1 // indirect
 	github.com/prometheus/client_model v0.2.0 // indirect
@@ -75,13 +83,4 @@ require (
 	sigs.k8s.io/json v0.0.0-20220713155537-f223a00ba0e2 // indirect
 	sigs.k8s.io/structured-merge-diff/v4 v4.2.3 // indirect
 	sigs.k8s.io/yaml v1.3.0 // indirect
-)
-
-replace (
-	github.com/openshift/machine-config-operator => github.com/openshift/machine-config-operator v0.0.1-0.20200913004441-7eba765c69c9
-	github.com/openshift/ptp-operator => github.com/edcdavid/ptp-operator v1.0.0
-	github.com/test-network-function/l2discovery/l2lib => ../l2discoverydavid/l2lib
-	github.com/test-network-function/l2discovery/l2lib/pkg/export => ../l2discoverydavid/l2lib/pkg/export
-	github.com/test-network-function/simplegraphsolver/pkg/export => ./pkg/export
-	github.com/test-network-function/simplegraphsolver/pkg/lib => ./pkg/lib
 )
