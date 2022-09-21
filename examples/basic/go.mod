@@ -1,6 +1,6 @@
 module github.com/test-network-function/simplegraphsolver/examples/basic
 
-go 1.18
+go 1.19
 
 replace github.com/test-network-function/simplegraphsolver/pkg/lib => ../../pkg/lib
 
