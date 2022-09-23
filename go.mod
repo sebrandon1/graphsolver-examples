@@ -3,9 +3,9 @@ module github.com/test-network-function/l2discovery-examples
 go 1.19
 
 require (
-	github.com/openshift/ptp-operator v0.0.0-20220907171633-564febae1c75
-	github.com/test-network-function/graphsolver-lib v0.0.0-20220909223750-81a75bdaf38f
-	github.com/test-network-function/l2discovery-lib v0.0.0-20220909222910-ff616a209e19
+	github.com/openshift/ptp-operator v0.0.0-20220922002031-4e588c96d5d6
+	github.com/test-network-function/graphsolver-lib v0.0.0-20220923161551-922faf8697be
+	github.com/test-network-function/l2discovery-lib v0.0.0-20220923165621-0bf88d75cbb2
 )
 
 require (
@@ -48,8 +48,8 @@ require (
 	github.com/sirupsen/logrus v1.9.0 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
 	github.com/test-network-function/graphsolver-exports v0.0.0-20220909223441-46e11b864674 // indirect
-	github.com/test-network-function/l2discovery-exports v0.0.0-20220909220625-69bfab4b0fc1 // indirect
-	github.com/test-network-function/privileged-daemonset v1.0.0 // indirect
+	github.com/test-network-function/l2discovery-exports v0.0.0-20220923161031-1d53fe9e13dc // indirect
+	github.com/test-network-function/privileged-daemonset v0.0.0-20220923160818-f61f26ba4b41 // indirect
 	github.com/yourbasic/graph v0.0.0-20210606180040-8ecfec1c2869 // indirect
 	golang.org/x/net v0.0.0-20220722155237-a158d28d115b // indirect
 	golang.org/x/oauth2 v0.0.0-20220411215720-9780585627b5 // indirect
@@ -63,10 +63,10 @@ require (
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	k8s.io/api v0.25.0 // indirect
+	k8s.io/api v0.25.2 // indirect
 	k8s.io/apiextensions-apiserver v0.25.0 // indirect
-	k8s.io/apimachinery v0.25.0 // indirect
-	k8s.io/client-go v0.25.0 // indirect
+	k8s.io/apimachinery v0.25.2 // indirect
+	k8s.io/client-go v0.25.2 // indirect
 	k8s.io/component-base v0.25.0 // indirect
 	k8s.io/klog/v2 v2.70.1 // indirect
 	k8s.io/kube-openapi v0.0.0-20220803162953-67bda5d908f1 // indirect
